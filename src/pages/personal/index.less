@@ -1,0 +1,103 @@
+.person_container{
+  width: 100%;
+  height :667px;
+  background-color :#f2f5f4;
+  .person_header{
+    width :100%;
+    height: 50px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-bottom :1px solid #ccc;
+    padding :10px;
+    display :flex;
+    align-items: center;
+    position :relative;
+    .title{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size :22px;
+      font-family :KaiTi;
+    }
+      
+    .iconfont{
+      font-size: 25px;
+
+    }
+    .icon-sousuo{
+      position: absolute;
+      right: 50px;
+    }
+      
+    .icon-gouwuche1{
+      position :absolute;
+      right :10px;
+    }
+      
+  }
+    
+  .person_content{
+    width: 100%;
+    .logoImg{
+      width :100%;
+      padding :80px 0 116px;
+      img{
+        display: block;
+        margin: 0 auto;
+        width :134px;
+        height: 45px;
+      }
+        
+    }
+      
+    .btns{
+      width: 100%;
+      display :flex;
+      flex-direction: column;
+      align-items :center;
+      .phoneBtn, .mailBtn{
+        width :335px;
+        height :47px;
+        margin-bottom: 16px;
+        font-size :16px;
+        background-color: #dd1a21;
+      }
+      .mailBtn{
+        color:#dd1a21;
+        border:1px solid #dd1a21;
+        background-color: transparent;
+      }
+    }
+      
+  }
+    
+  .person_footer{
+    width :100%;
+    position: fixed;;
+    bottom :50px;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    .link{
+      display :flex;
+      li{
+        padding: 0 15px;
+        width :60px;
+        height :20px;
+        font-size: 14px;
+        text-align :center;
+        border-right :1px solid #000;
+        &:last-child{
+          border: none;
+        }
+        i{
+          width :10px;
+          height: 10px;
+        }
+      }
+    }
+      
+  }
+    
+}
+  

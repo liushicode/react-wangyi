@@ -8,11 +8,20 @@
     "@testing-library/user-event": "^7.2.1",
     "antd": "^4.0.2",
     "antd-mobile": "^2.3.1",
+    "axios": "^0.19.2",
+    "better-scroll": "^1.15.2",
+    "mockjs": "^1.1.0",
     "postcss-pxtorem": "^5.1.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "remove": "^0.1.5",
+    "stylus-converter": "^0.8.1",
+    "swiper": "^5.3.6"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -21,7 +30,10 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "no-unused-vars": "off"
+    }
   },
   "browserslist": {
     "production": [
@@ -40,6 +52,7 @@
     "customize-cra": "^0.9.1",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
-    "react-app-rewired": "^2.1.5"
+    "react-app-rewired": "^2.1.5",
+    "redux-devtools-extension": "^2.13.8"
   }
 }

@@ -5,21 +5,33 @@ import ShopCart from '../pages/shopCart'
 import Personal from '../pages/personal'
 import Search from '../pages/search'
 
+import First from '../pages/home/first/First'
+import Second from '../pages/home/second/Second'
+
 const routes = [
-  {
-    path: '/',
-    component: Home,
-    exact: true//全匹配
-  },
   {
     path: '/home',
     component: Home,
-    exact: true
+    children: [
+      {
+        path: '/home/first',
+        component: First,
+        exact: true
+      },
+      {
+        path: '/home/second:id',
+        component: Second,
+        exact: true
+      },
+    ]
   },
   {
     path: '/category',
     component: Category,
-    exact: true
+    children: {
+      path: '/category/:id',
+      component:Category
+    }
   },
   {
     path: '/buy',

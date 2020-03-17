@@ -1,0 +1,215 @@
+.buy_container {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  padding-top: 50px;
+  box-sizing: border-box;
+
+  .buy_header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+    .title {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 18px;
+    }
+
+    .iconfont {
+      font-size: 25px;
+    }
+
+    .icon-sousuo {
+      position: absolute;
+      right: 50px;
+    }
+
+    .icon-gouwuche1 {
+      position: absolute;
+      right: 10px;
+    }
+
+  }
+
+  .buy_content {
+    width: 100%;
+
+    .mask {
+      width: 100%;
+      height: 260px;
+      background-color: #e2c995;
+      position: relative;
+      padding: 25px 0 0;
+      box-sizing: border-box;
+
+      .text {
+        font-size: 20px;
+        margin-left: 30px;
+        color: #fff;
+      }
+
+      .title {
+        font-size: 14px;
+        color: #fff;
+        font-family: 'PingFangSC-Regular';
+        margin-left: 10px;
+      }
+
+    }
+  }
+
+  .nav_list {
+    position: relative;
+    z-index: 10;
+    width: 355px;
+    height: 270px;
+    margin: -190px auto 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      .swiper-wrapper {
+        width: 200%;
+        height: 100%;
+        flex-wrap: wrap;
+        .swiper-slide {
+          width: 12.5%!important;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          a {
+            width: 84px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            img {
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+              margin-bottom: 5px;
+            }
+            .name {
+              font-size: 16px;
+              font-weight: bold;
+              margin-bottom: 2px;
+            }
+            .descText {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .lookList {
+    box-sizing: border-box;
+    padding: 10px 10px;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+    .shopdatas {
+      width: 100%;
+      overflow: hidden;
+
+      .ad {
+        width: 172px;
+        float: right;
+
+        .adImg {
+          width: 172px;
+          height: 95px;
+          margin: 0;
+          border-radius: 10px;
+        }
+      }
+
+      li {
+        width: 172px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        overflow: auto;
+        margin-bottom: 10px;
+
+        &:nth-child(2n+1) {
+          float: right;
+        }
+
+        &:nth-child(2n) {
+          float: left;
+        }
+
+        img {
+          width: 172px;
+          margin-bottom: 5px;
+        }
+
+        .title {
+          font-size: 12px;
+          width: 155px;
+          padding: 9px 8px 0;
+        }
+
+        .user_info {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 155px;
+          padding: 8px 8px 12px;
+
+          .info {
+            display: flex;
+            align-items: center;
+
+            img {
+              width: 24px;
+              height: 24px;
+              border-radius: 50%;
+              margin-right: 2px;
+            }
+
+            .name {
+              font-size: 10px;
+            }
+          }
+
+          .count {
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+
+            span {
+              margin-left: 5px;
+
+            }
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
