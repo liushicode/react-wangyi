@@ -21,7 +21,7 @@
     "redux-thunk": "^2.3.0",
     "remove": "^0.1.5",
     "stylus-converter": "^0.8.1",
-    "swiper": "^5.3.6"
+    "swiper": "^6.5.1"
   },
   "scripts": {
     "start": "react-app-rewired start",
